@@ -1,3 +1,5 @@
-pip==1.5.6
 Flask==0.10.1
 beautifulsoup4==4.4.1
+requests
+re
+random
