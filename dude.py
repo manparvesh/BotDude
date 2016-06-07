@@ -50,11 +50,11 @@ def handle_incoming_messages():
     if 'message' in event and 'text' in event['message']:
         sender = data['entry'][0]['messaging'][0]['sender']['id']
         message = data['entry'][0]['messaging'][0]['message']['text']
-    
-	    reply(sender, message)
 
-    	return "ok"
-	return "not ok"
+        reply(sender, message)
+
+        return "ok"
+    return "not ok"
 
 
 if __name__ == '__main__':
