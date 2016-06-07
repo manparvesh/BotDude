@@ -33,7 +33,7 @@ def intro():
 def processReply(msg):
     tokens = re.sub(r"[^a-zA-Z0-9\s]", ' ', msg).lower().split()
 
-    if "who" in token:
+    if "who" in tokens:
         return intro()
 
     for token in tokens:
