@@ -32,13 +32,15 @@ def intro():
 
 def processReply(msg):
     tokens = re.sub(r"[^a-zA-Z0-9\s]", ' ', msg).lower().split()
+
+    if "who" in token:
+        return intro()
+
     for token in tokens:
         if token in hello:
             return sayHi(token)
         elif token == "bye" or "goodbye":
             return sayBye()
-        elif token == "who are you":
-            return intro()
     return "You don't make sense to me dude!"
 
 
