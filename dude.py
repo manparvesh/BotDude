@@ -19,7 +19,7 @@ def sayHi(received_message):
     tokens = re.sub(r"[^a-zA-Z0-9\s]", ' ', received_message).lower().split()
     for token in tokens:
         if token in hello:
-            return jokes[token]
+            return hello[token]
     return "You don't make sense to me dude!"
 
 # you know, that's just, your opinion dude!
