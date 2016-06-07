@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/python-2.7-blue.svg) 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/swapagarwal/JARVIS-on-Messenger/master/LICENSE) 
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/manparvesh/BotDude/) 
-[![Coverage Status](https://coveralls.io/repos/manparvesh/BotDude/badge.svg)](https://coveralls.io/r/manparvesh/BotDude)
+[![Coverage Status](https://coveralls.io/repos/github/manparvesh/BotDude/badge.svg?branch=master)](https://coveralls.io/github/manparvesh/BotDude?branch=master)
 [![Stories in Ready](https://badge.waffle.io/manparvesh/BotDude.svg?label=ready)](https://waffle.io/manparvesh/BotDude)
 [![forthebadge](http://forthebadge.com/badges/built-with-swag.svg)](http://forthebadge.com)
 
