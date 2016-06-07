@@ -13,22 +13,39 @@ ACCESS_TOKEN += "1HS0PqSxHDWqu34NLngWyyTBKmfDQlnCzkySGAVGkr0DftNAZDZD"
 VERIFY_TOKEN = "abcd"
 
 
-def sayHi(received_message):
-    hello = {'hi': "Hi dude!", 'hello': "Hi dude!"}
+hello = {'hi': "Hi dude!", 'hello': "Hi dude!"}
 
-    tokens = re.sub(r"[^a-zA-Z0-9\s]", ' ', received_message).lower().split()
-    for token in tokens:
-        if token in hello:
-            return hello[token]
-    return "You don't make sense to me dude!"
+
+def sayHi(token):
+    return hello[token]
 
 # you know, that's just, your opinion dude!
+
+
+def sayBye():
+    return "Goodbye, Dude!"
+
+
+def intro():
+    return "I'm the dude, dude!"
+
+
+def processReply(msg):
+    tokens = re.sub(r"[^a-zA-Z0-9\s]", ' ', msg).lower().split()
+    for token in tokens:
+        if token in hello:
+            return sayHi(token)
+        elif token == "bye" or "goodbye":
+            return sayBye()
+        elif token == "who are you":
+            return intro()
+    return "You don't make sense to me dude!"
 
 
 def reply(user_id, msg):
     data = {
         "recipient": {"id": user_id},
-        "message": {"text": sayHi(msg)}
+        "message": {"text": processReply(msg)}
     }
     url = "https://graph.facebook.com/v2.6/me/messages?access_token="
     resp = requests.post(url + ACCESS_TOKEN, json=data)
