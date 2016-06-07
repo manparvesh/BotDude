@@ -46,11 +46,15 @@ def handle_verification():
 @app.route('/', methods=['POST'])
 def handle_incoming_messages():
     data = request.json
-    sender = data['entry'][0]['messaging'][0]['sender']['id']
-    message = data['entry'][0]['messaging'][0]['message']['text']
-    reply(sender, message)
+    event = data['entry'][0]['messaging'][0]
+    if 'message' in event and 'text' in event['message']:
+        sender = data['entry'][0]['messaging'][0]['sender']['id']
+        message = data['entry'][0]['messaging'][0]['message']['text']
+    
+	    reply(sender, message)
 
-    return "ok"
+    	return "ok"
+	return "not ok"
 
 
 if __name__ == '__main__':
