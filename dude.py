@@ -1,3 +1,4 @@
+import config
 from flask import Flask, request
 import requests
 import re
@@ -6,42 +7,12 @@ import os
 
 app = Flask(__name__)
 
-ACCESS_TOKEN = "EAALGzZACE8t0BABrOY4kklZBTBZBo3wZAsX8GFcN588ZAp87"
-ACCESS_TOKEN += "j7tBRPGYzGxbxLvSk4tAZBe4o"
-ACCESS_TOKEN += "Pyr0FZBAE8x88xZByGsRRGZAl2uT24vWzTubLf7AxfjYZCG4yUiTody"
-ACCESS_TOKEN += "1HS0PqSxHDWqu34NLngWyyTBKmfDQlnCzkySGAVGkr0DftNAZDZD"
-VERIFY_TOKEN = "abcd"
-
-
-hello = {'hi': "Hi dude!", 'hello': "Hi dude!"}
-
-
-def sayHi(token):
-    return hello[token]
-
-# you know, that's just, your opinion dude!
-
-
-def sayBye():
-    return "Goodbye, Dude!"
-
-
-def intro():
-    return "I'm the dude, dude!"
+ACCESS_TOKEN = os.environ.get('ACCESS_TOKEN', config.ACCESS_TOKEN)
+VERIFY_TOKEN = os.environ.get('VERIFY_TOKEN', config.VERIFY_TOKEN)
 
 
 def processReply(msg):
-    tokens = re.sub(r"[^a-zA-Z0-9\s]", ' ', msg).lower().split()
-
-    if "who" in tokens:
-        return intro()
-
-    for token in tokens:
-        if token in hello:
-            return sayHi(token)
-        elif token == "bye" or "goodbye":
-            return sayBye()
-    return "You don't make sense to me dude!"
+    return modules.search(msg)
 
 
 def reply(user_id, msg):
@@ -67,8 +38,8 @@ def handle_incoming_messages():
     data = request.json
     event = data['entry'][0]['messaging'][0]
     if 'message' in event and 'text' in event['message']:
-        sender = data['entry'][0]['messaging'][0]['sender']['id']
-        message = data['entry'][0]['messaging'][0]['message']['text']
+        sender = event['sender']['id']
+        message = event['message']['text']
 
         reply(sender, message)
 
