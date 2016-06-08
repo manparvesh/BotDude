@@ -12,11 +12,11 @@ A facebook messenger bot inspired by the Dude ([The Big Lebowski](http://www.imd
 ### Sample Queries
 
 `Hi, dude!`  
-`Duuuuuude!`
-`:P`
-`:D`
-`Goodbye dude!`
-`help`
-`Who are you?`
-`Tell me a joke`
+`Duuuuuude!`  
+`:P`  
+`:D`  
+`Goodbye dude!`  
+`help`  
+`Who are you?`  
+`Tell me a joke`  
 `Tell me a quote`
