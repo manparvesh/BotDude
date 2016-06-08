@@ -20,7 +20,7 @@ def processReply(msg):
 def reply(user_id, msg):
     data = {
         "recipient": {"id": user_id},
-        "message": {"text": processReply(msg)}
+        "message": processReply(msg)
     }
     url = "https://graph.facebook.com/v2.6/me/messages?access_token="
     resp = requests.post(url + ACCESS_TOKEN, json=data)
