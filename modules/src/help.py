@@ -8,6 +8,7 @@ Hi, dude!
 Duuuuuude!
 Yay!
 How are you?
+What are you doing?
 Do you know about God?
 Who made you?
 Who is Man Parvesh?
