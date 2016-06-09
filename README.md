@@ -1,4 +1,4 @@
-# BotDude
+# Bot Dude
 [![Build Status](https://travis-ci.org/manparvesh/BotDude.png)](https://travis-ci.org/manparvesh/BotDude) 
 ![Python](https://img.shields.io/badge/python-2.7-blue.svg) 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/swapagarwal/JARVIS-on-Messenger/master/LICENSE) 
@@ -12,15 +12,17 @@ A facebook messenger bot inspired by the Dude ([The Big Lebowski](http://www.imd
 
 I developed Bot Dude mainly for fun. Moreover, anyone can contribute to this project by suggesting more fun features that can be added or by sending a PR :smile:  
 You can take a look at the [contributing guidelines](https://github.com/manparvesh/BotDude/blob/master/CONTRIBUTING.md) for any help required.  
-A lot of help wasa taken from [Swapnil](https://github.com/swapagarwal/)'s project [JARVIS](https://github.com/swapagarwal/JARVIS-on-Messenger).
+A lot of help was taken from [Swapnil](https://github.com/swapagarwal/)'s project [JARVIS](https://github.com/swapagarwal/JARVIS-on-Messenger).
 
 ### About the Dude
+
+![The dude](http://www.joblo.com/newsimages1/Big%20Lebowski%20001.jpg)
 
 [The Dude](http://www.imdb.com/character/ch0003518/) is the main character in the movie [The Big Lebowski](http://www.imdb.com/title/tt0118715/). It is a 1988 American neo-noir crime comedy film. You can read more about it [here](https://en.wikipedia.org/wiki/The_Big_Lebowski), or, even better, watch it to make your experience talking to the dude more fun!
 
 ### Usage
 
-The Dude is now live [here](https://www.messenger.com/t/BotDude) and public! Feel fre to send a message! :smile:
+The Dude is now live [here](https://www.messenger.com/t/BotDude) and public! Feel free to send a message! :smile:
 
 ### Sample Queries
 
