@@ -14,6 +14,11 @@ A facebook messenger bot inspired by the Dude ([The Big Lebowski](http://www.imd
 `Hi, dude!`  
 `Duuuuuude!`  
 `:P`  
+`Yay!`  
+`How are you?`  
+`Do you know about God?`  
+`Who made you?`  
+`Who is Man Parvesh?`  
 `:D`  
 `Goodbye dude!`  
 `help`  

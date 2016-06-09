@@ -9,6 +9,8 @@ Duuuuuude!
 Yay!
 How are you?
 Do you know about God?
+Who made you?
+Who is Man Parvesh?
 :P
 :D
 Goodbye dude!
