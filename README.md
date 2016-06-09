@@ -8,3 +8,15 @@
 
 
 A facebook messenger bot inspired by the Dude ([The Big Lebowski](http://www.imdb.com/title/tt0118715/))
+
+### Sample Queries
+
+`Hi, dude!`  
+`Duuuuuude!`  
+`:P`  
+`:D`  
+`Goodbye dude!`  
+`help`  
+`Who are you?`  
+`Tell me a joke`  
+`Tell me a quote`
