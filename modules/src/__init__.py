@@ -6,6 +6,12 @@ __all__ = [
     'hello',
     'help',
     'intro',
+    'whomadeyou',
+    'manparvesh',
+    'cheer',
+    'iknow',
+    'howareyou',
+    'intro',
     'joke',
     'quote'
 ]
