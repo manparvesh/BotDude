@@ -20,7 +20,7 @@ A lot of help wasa taken from [Swapnil](https://github.com/swapagarwal/)'s proje
 
 ### Usage
 
-The Dude is now live [here](https://www.messenger.com/t/BotDude). Currently, it's pending approval before the public can engage. If you'd like to be a tester, post [here](https://www.facebook.com/BotDude/posts/190232388040620).
+The Dude is now live [here](https://www.messenger.com/t/BotDude) and public! Feel fre to send a message! :smile:
 
 ### Sample Queries
 
