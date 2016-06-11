@@ -6,7 +6,7 @@ def process(input):
     cuss = [
         'Damn! You need language lessons, dude!',
         'Easy there, dude!',
-        'Dude! Tongue!',
+        'Relax, dude!',
         'Control, dude!'
     ]
     output = {

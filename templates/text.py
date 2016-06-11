@@ -1,4 +1,4 @@
-TEXT_CHARACTER_LIMIT = 320
+TEXT_CHARACTER_LIMIT = 600
 
 template = {
     'template_type': 'text',

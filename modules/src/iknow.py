@@ -4,9 +4,7 @@ from templates.text import TextTemplate
 
 def process(input):
     iknow = [
-        'I know everything dude!',
-        'I\'m amazing, dude! You don\'t know me yet.',
-        'I\'m batman'
+        'I know everything dude! Just too lazy to type all that!'
     ]
     output = {
         'input': input,

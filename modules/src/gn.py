@@ -3,17 +3,13 @@ from templates.text import TextTemplate
 
 
 def process(input):
-    emoji = [
-        ':P',
-        ':)',
-        ':O',
-        'B-)',
-        '-_-',
-        ':D'
+    gn = [
+        'Night, dude!',
+        'Good night, dude! Sleep tight! :P'
     ]
     output = {
         'input': input,
-        'output': TextTemplate(random.choice(emoji)).get_message(),
+        'output': TextTemplate(random.choice(gn)).get_message(),
         'success': True
     }
     return output
